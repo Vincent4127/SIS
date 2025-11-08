@@ -1,0 +1,119 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Dashboard layout */
+#dashboard {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Controls and registered courses (left side) */
+#controlsArea {
+    flex: 1;
+}
+
+/* Input group */
+.inputGroup {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.inputGroup span {
+    font-weight: bold;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.inputGroup input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 6px;
+    outline: none;
+}
+
+.inputGroup input[type="text"]:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-1px);
+}
+
+/* Tables styling */
+#displayArea table,
+#coursesArea table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+#displayArea th,
+#displayArea td,
+#coursesArea th,
+#coursesArea td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: right;
+}
+
+#displayArea th,
+#coursesArea th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Right side: All courses */
+#coursesArea {
+    flex: 1;
+}

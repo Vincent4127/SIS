@@ -1,0 +1,90 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+}
+
+/* Login form container */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0d0d0d;
+    text-align: center;
+}
+
+/* Input row */
+.inputRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+/* Label */
+.inputRow span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100px;
+    text-align: right;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 8px;
+    outline: none;
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 12px 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
