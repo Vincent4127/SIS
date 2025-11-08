@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN DASHBOARD</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div id="adminDashboard">
+        <h1>Admin's Dashboard</h1>
+
+        <div class="section" id="studentArea">
+            <h2>Student Management</h2>
+
+            <div class="flexRow">
+                <div class="inputsColumn">
+                    <div class="inputRow">
+                        <span>Student Name:</span>
+                        <input type="text" id="stdName" placeholder="Enter student name">
+                    </div>
+
+                    <div class="inputRow">
+                        <span>Email:</span>
+                        <input type="text" id="stdEmail" placeholder="Enter student email">
+                    </div>
+
+                    <div class="inputRow">
+                        <span>Password:</span>
+                        <input type="password" id="stdPass" placeholder="Enter password">
+                    </div>
+
+                    <div class="buttonRow">
+                        <button id="createBtn" onclick="createStudent()">Create</button>
+                        <button id="removeBtn" onclick="removeStudent()">Remove</button>
+                    </div>
+                </div>
+
+                <div id="studentArea2" class="tableColumn"></div>
+            </div>
+        </div>
+
+        <div class="section" id="coursesArea">
+            <h2>Courses Management</h2>
+
+            <div class="flexRow">
+                <div class="inputsColumn">
+                    <div class="inputRow">
+                        <span>Code:</span>
+                        <input type="text" id="courseCode" placeholder="Enter course code">
+                        <button onclick="deleteCourse()">Delete</button>
+                    </div>
+
+                    <div class="inputRow">
+                        <span>Name:</span>
+                        <input type="text" id="courseName" placeholder="Enter course name">
+                    </div>
+
+                    <div class="inputRow">
+                        <span>Credits (1: lab, 3: course):</span>
+                        <input type="text" id="courseCredits" placeholder="1 or 3" oninput="this.value = this.value.replace(/[^13]/g,'').slice(0,1)">
+                        <button onclick="addCourse()">Add</button>
+                    </div>
+                </div>
+
+                <div id="dispCourses" class="tableColumn"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main dashboard container */
+#adminDashboard {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Section headings */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #0d0d0d;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Flex container for inputs + table side by side */
+.flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Column for inputs */
+.inputsColumn {
+    flex: 1;
+}
+
+/* Column for table */
+.tableColumn {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Input rows */
+.inputRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Input labels */
+.inputRow span {
+    width: 180px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: 2px solid #333;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Button styling */
+button {
+    margin-left: 10px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Tables styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+    .flexRow {
+        flex-direction: column;
+    }
+
+    .tableColumn {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+}
